@@ -1,36 +1,49 @@
 # SoftDiary → Codemagic
 
-## Repo
+## Repository
 
-GitHub: *(filled after push)*
+- **GitHub**: https://github.com/dale454071867/SoftDiary  
+- **Branch**: `main`  
+- **Config**: `codemagic.yaml`（仓库根目录）
 
-## Quick start on Codemagic
+## 在 Codemagic 添加应用
 
-1. Open [https://codemagic.io](https://codemagic.io) and sign in with **GitHub**
-2. **Add application** → select the `SoftDiary` / `softdiary` repository
-3. Project type: **Other** (native iOS) / scan for `codemagic.yaml`
-4. Start workflow **SoftDiary iOS Debug** first (no signing needed)
+1. 打开 https://codemagic.io 并用 **GitHub** 登录  
+2. 授权访问账号 `dale454071867`（若未授权点 Connect repository）  
+3. **Add application** → 选择 **SoftDiary**  
+4. Project type 选检测 `codemagic.yaml` / Other（native iOS）  
+5. 先跑工作流 **SoftDiary iOS Debug**（无需证书）
 
-## App Store IPA workflow
+直接入口（登录后）：  
+https://codemagic.io/apps
 
-Before running **SoftDiary App Store IPA**:
+## 工作流说明
 
-1. Codemagic → Team settings → **Code signing identities**
-   - Upload distribution certificate + App Store provisioning profile for `com.softdiary.app`
-   - Or use automatic signing via App Store Connect API key
-2. (Optional) **Integrations → App Store Connect** — add API key, then uncomment `integrations` / `publishing.app_store_connect` in `codemagic.yaml`
-3. Set Team ID in Xcode / Codemagic signing to your Apple Developer Team
+| Workflow ID | 名称 | 用途 |
+|-------------|------|------|
+| `ios-debug` | SoftDiary iOS Debug | 无签名模拟器构建，验证 CI |
+| `ios-appstore` | SoftDiary App Store IPA | 需上传证书/描述文件后打 IPA |
 
-## Local files
+## App Store IPA 前置
 
-| File | Purpose |
-|------|---------|
-| `codemagic.yaml` | CI workflows |
-| `SoftDiary.xcodeproj` | Xcode project |
-| `project.yml` | XcodeGen source (optional regenerate) |
+1. Codemagic → Team settings → **Code signing identities**  
+   - 上传 Distribution Certificate + App Store Profile（`com.softdiary.app`）  
+2. （可选）**Integrations → App Store Connect** 添加 API Key  
+3. 在 `codemagic.yaml` 里取消注释 `integrations` / TestFlight publishing  
 
-## Support URLs (App Store Connect)
+## Support URLs（App Store Connect）
 
-- Support: https://softdiary-support.454071867.workers.dev
-- Privacy: https://softdiary-support.454071867.workers.dev/privacy
-- Terms: https://softdiary-support.454071867.workers.dev/terms
+- Support: https://softdiary-support.454071867.workers.dev  
+- Privacy: https://softdiary-support.454071867.workers.dev/privacy  
+- Terms: https://softdiary-support.454071867.workers.dev/terms  
+
+## 本地更新后推送
+
+```bash
+cd "/Users/zhoujie/MyPoject/工具/马甲/空2"
+git add -A
+git commit -m "Update SoftDiary"
+git push origin main
+```
+
+推送后 Codemagic 可手动 Start build，或按 yaml 里配置的触发条件自动构建。
