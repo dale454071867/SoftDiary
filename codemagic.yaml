@@ -1,0 +1,112 @@
+# SoftDiary — Codemagic CI for native iOS
+# Docs: https://docs.codemagic.io/yaml-quick-start/building-a-native-ios-app/
+
+workflows:
+  # Unsigned simulator/debug build — works without Apple signing setup
+  ios-debug:
+    name: SoftDiary iOS Debug
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+      vars:
+        XCODE_PROJECT: SoftDiary.xcodeproj
+        XCODE_SCHEME: SoftDiary
+        BUNDLE_ID: com.softdiary.app
+    scripts:
+      - name: Ensure Xcode project exists
+        script: |
+          set -e
+          if [ ! -d "$CM_BUILD_DIR/$XCODE_PROJECT" ]; then
+            brew install xcodegen
+            cd "$CM_BUILD_DIR"
+            xcodegen generate
+          fi
+      - name: Build (no code signing)
+        script: |
+          set -e
+          xcodebuild \
+            -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$CM_BUILD_DIR/build/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            clean build
+    artifacts:
+      - build/DerivedData/Build/Products/**/*.app
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      email:
+        recipients:
+          - utiji81@163.com
+        notify:
+          success: false
+          failure: true
+
+  # App Store IPA — requires Codemagic code signing + (optional) ASC integration
+  ios-appstore:
+    name: SoftDiary App Store IPA
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    # Uncomment after adding App Store Connect API key in Codemagic → Teams → Integrations
+    # integrations:
+    #   app_store_connect: SoftDiary ASC
+    environment:
+      xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.softdiary.app
+      vars:
+        XCODE_PROJECT: SoftDiary.xcodeproj
+        XCODE_SCHEME: SoftDiary
+        BUNDLE_ID: com.softdiary.app
+        # APP_STORE_APPLE_ID: "YOUR_NUMERIC_APP_ID"
+    scripts:
+      - name: Ensure Xcode project exists
+        script: |
+          set -e
+          if [ ! -d "$CM_BUILD_DIR/$XCODE_PROJECT" ]; then
+            brew install xcodegen
+            cd "$CM_BUILD_DIR"
+            xcodegen generate
+          fi
+      - name: Set up code signing profiles
+        script: xcode-project use-profiles
+      - name: Increment build number
+        script: |
+          set -e
+          cd "$CM_BUILD_DIR"
+          # Fallback when ASC not linked yet
+          BUILD_NUMBER=${BUILD_NUMBER:-$(date +%Y%m%d%H%M)}
+          if [ -n "${APP_STORE_APPLE_ID:-}" ]; then
+            LATEST=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" || true)
+            if [ -n "$LATEST" ] && [ "$LATEST" != "None" ]; then
+              BUILD_NUMBER=$((LATEST + 1))
+            fi
+          fi
+          agvtool new-version -all "$BUILD_NUMBER"
+      - name: Build IPA
+        script: |
+          set -e
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      email:
+        recipients:
+          - utiji81@163.com
+        notify:
+          success: true
+          failure: true
+      # Uncomment to upload to TestFlight after integrations + signing are ready
+      # app_store_connect:
+      #   auth: integration
+      #   submit_to_testflight: true
+      #   submit_to_app_store: false

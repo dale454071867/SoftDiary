@@ -1,0 +1,32 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Node / support site
+support-site/node_modules/
+support-site/.wrangler/
+support-site/package-lock.json
+
+# Ruby / local tools
+.open-xcode-clean.sh.bak
+*.log
+
+# Secrets
+.env
+.env.*
+**/AuthKey_*.p8
+*.p12
+*.mobileprovision

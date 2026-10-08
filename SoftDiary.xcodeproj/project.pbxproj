@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A726734C28067A2EC753CB9 /* DiaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB852B91933D844B13349 /* DiaryDetailView.swift */; };
+		0BF6F673830A9D9DAACD5362 /* CalendarDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A7968F0EEB0049DE52EEC /* CalendarDiaryView.swift */; };
+		17B8B82A8759EEB6D9F15660 /* MoodMascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186ACA23F3FE43AA2A94FB9 /* MoodMascotView.swift */; };
+		34BA12B6416AA50074A100E2 /* DiaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E942FE46DA60F88C2498DA /* DiaryStore.swift */; };
+		364BA4C2C47178032B4B973F /* DiaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783729EF339DFCC41A1D6F9E /* DiaryCardView.swift */; };
+		3AC6744AC383D3247ED055A2 /* DiaryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136CD880301098898DE9807 /* DiaryTag.swift */; };
+		3D01E1C244778489B373E35C /* SketchPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DD2091541D6DB91F617DA6 /* SketchPadView.swift */; };
+		3E442769A10981A2B88CE6C1 /* DiaryMediaViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D444A02F95DC72E195E5703 /* DiaryMediaViews.swift */; };
+		440E00E50AE8E702F427CFAA /* AgreementDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC9094677A967A14008486 /* AgreementDocumentView.swift */; };
+		46899B5F6F5BB0DBCFE74FEA /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594484460C401A5700D7498C /* Mood.swift */; };
+		567DEDCE3CC3F43ECB948B7E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AAB45B18F622CED37C38DD /* MainTabView.swift */; };
+		623DF154B6902AE2E47B6D63 /* LockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF2BD669088F237A10A508 /* LockStore.swift */; };
+		63E910985BE1AD8B3423EFAA /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6901DF89047AA53BE3547B /* AudioRecorder.swift */; };
+		685B5665F440281C349A47D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B6B6EF588084FA92F1A6E /* ContentView.swift */; };
+		6918F2DBAC5A1E84A98B1CEE /* SoftDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630D0D8104C39C64D2B2EF8 /* SoftDiaryApp.swift */; };
+		7751F67F8C4E6BA0BE3A2F71 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE14730B48BEE96AFDB06E /* LockScreenView.swift */; };
+		8FC03D127A52252D16DCFAB9 /* CharacterPose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B214C8595D2118FE0972015 /* CharacterPose.swift */; };
+		91FAAEE0B2451A2E2EFD0F62 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547CAABAD28F0739353E58CB /* SettingsView.swift */; };
+		94712F6EB222AD19807B3968 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22929BAE66E90A2D522502F /* StatsView.swift */; };
+		9EEAC57661091B2166879A4B /* LegalDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01CD59C5A1E5987A7084B2A /* LegalDocuments.swift */; };
+		A6F6467B4B0941C57F4EE44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BEA77404BEE57AA2B12EC5 /* Assets.xcassets */; };
+		AE425B351827605CF7EBF532 /* CharacterPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E75351B6ADC33221C6B64 /* CharacterPortraitView.swift */; };
+		BBBB694C90430AD88378E914 /* AppSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75D983C391189A98120FBE /* AppSkin.swift */; };
+		BE64D493EDB6FEFA6D308322 /* PortraitGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDCA14C8CC29482CD0EDFA /* PortraitGalleryView.swift */; };
+		C0F3E62436520ECFB5AC2A99 /* WriteDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C7D8DA639E4A789FB2439 /* WriteDiaryView.swift */; };
+		C2F45256A341513E12254D17 /* MediaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82CD6BCC580DA8A0449F8C /* MediaStore.swift */; };
+		C399F0E3ED178A88773C6DDC /* DiaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E5EEE4309F7E5A4C8C742 /* DiaryEntry.swift */; };
+		C8F543430F42FE78FDDB25AB /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2199DAE276EC8E6C5704C51 /* AppTheme.swift */; };
+		D4A82B143DA635625CE00D10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D84B11A6FEB74C48D5CF4C /* HomeView.swift */; };
+		F12817A18016FC8AEBB9762D /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1923CAB0C79FBE5730113 /* EmptyStateView.swift */; };
+		FCC38A4F2430C24FCE563840 /* CartoonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA13650312E9B987F5DAB12 /* CartoonTabBar.swift */; };
+		FCFC13CDE4AFBE311E775D48 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF106283809B0425798608 /* ExportService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D444A02F95DC72E195E5703 /* DiaryMediaViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryMediaViews.swift; sourceTree = "<group>"; };
+		0FA13650312E9B987F5DAB12 /* CartoonTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonTabBar.swift; sourceTree = "<group>"; };
+		13AAB45B18F622CED37C38DD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1E75D983C391189A98120FBE /* AppSkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSkin.swift; sourceTree = "<group>"; };
+		279C7D8DA639E4A789FB2439 /* WriteDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryView.swift; sourceTree = "<group>"; };
+		2E36F79769893B585527BF80 /* SoftDiary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoftDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DDCA14C8CC29482CD0EDFA /* PortraitGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitGalleryView.swift; sourceTree = "<group>"; };
+		4B214C8595D2118FE0972015 /* CharacterPose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPose.swift; sourceTree = "<group>"; };
+		547CAABAD28F0739353E58CB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		594484460C401A5700D7498C /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		5D82CD6BCC580DA8A0449F8C /* MediaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStore.swift; sourceTree = "<group>"; };
+		63FF2BD669088F237A10A508 /* LockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockStore.swift; sourceTree = "<group>"; };
+		6C6901DF89047AA53BE3547B /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		713AB852B91933D844B13349 /* DiaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailView.swift; sourceTree = "<group>"; };
+		783729EF339DFCC41A1D6F9E /* DiaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCardView.swift; sourceTree = "<group>"; };
+		7BA1923CAB0C79FBE5730113 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		8136CD880301098898DE9807 /* DiaryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTag.swift; sourceTree = "<group>"; };
+		8F4E75351B6ADC33221C6B64 /* CharacterPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPortraitView.swift; sourceTree = "<group>"; };
+		9630D0D8104C39C64D2B2EF8 /* SoftDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftDiaryApp.swift; sourceTree = "<group>"; };
+		96D84B11A6FEB74C48D5CF4C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		975E5EEE4309F7E5A4C8C742 /* DiaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntry.swift; sourceTree = "<group>"; };
+		A68B6B6EF588084FA92F1A6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AABF106283809B0425798608 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		B01CD59C5A1E5987A7084B2A /* LegalDocuments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDocuments.swift; sourceTree = "<group>"; };
+		B3BEA77404BEE57AA2B12EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEEE14730B48BEE96AFDB06E /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		C1E942FE46DA60F88C2498DA /* DiaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryStore.swift; sourceTree = "<group>"; };
+		C22929BAE66E90A2D522502F /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		CBDC9094677A967A14008486 /* AgreementDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementDocumentView.swift; sourceTree = "<group>"; };
+		D2199DAE276EC8E6C5704C51 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E186ACA23F3FE43AA2A94FB9 /* MoodMascotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMascotView.swift; sourceTree = "<group>"; };
+		E8DD2091541D6DB91F617DA6 /* SketchPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPadView.swift; sourceTree = "<group>"; };
+		F40A7968F0EEB0049DE52EEC /* CalendarDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDiaryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		023197A4BA1154F9C57DF49D /* SoftDiary */ = {
+			isa = PBXGroup;
+			children = (
+				B3BEA77404BEE57AA2B12EC5 /* Assets.xcassets */,
+				9630D0D8104C39C64D2B2EF8 /* SoftDiaryApp.swift */,
+				59D252FEE14CE7DA3521C078 /* Legal */,
+				5A3F0B7F2EA92A4628FF2766 /* Models */,
+				4E0898BCAAEA399CFE2DB0EB /* Services */,
+				EEFC12372B999FF21F7CC8BE /* Theme */,
+				5FA9B8B58BD6108CEB7A95A1 /* Views */,
+			);
+			path = SoftDiary;
+			sourceTree = "<group>";
+		};
+		4E0898BCAAEA399CFE2DB0EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C6901DF89047AA53BE3547B /* AudioRecorder.swift */,
+				C1E942FE46DA60F88C2498DA /* DiaryStore.swift */,
+				AABF106283809B0425798608 /* ExportService.swift */,
+				63FF2BD669088F237A10A508 /* LockStore.swift */,
+				5D82CD6BCC580DA8A0449F8C /* MediaStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		59D252FEE14CE7DA3521C078 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				B01CD59C5A1E5987A7084B2A /* LegalDocuments.swift */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		5A3F0B7F2EA92A4628FF2766 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B214C8595D2118FE0972015 /* CharacterPose.swift */,
+				975E5EEE4309F7E5A4C8C742 /* DiaryEntry.swift */,
+				8136CD880301098898DE9807 /* DiaryTag.swift */,
+				594484460C401A5700D7498C /* Mood.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FA9B8B58BD6108CEB7A95A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC9094677A967A14008486 /* AgreementDocumentView.swift */,
+				F40A7968F0EEB0049DE52EEC /* CalendarDiaryView.swift */,
+				A68B6B6EF588084FA92F1A6E /* ContentView.swift */,
+				713AB852B91933D844B13349 /* DiaryDetailView.swift */,
+				96D84B11A6FEB74C48D5CF4C /* HomeView.swift */,
+				BEEE14730B48BEE96AFDB06E /* LockScreenView.swift */,
+				13AAB45B18F622CED37C38DD /* MainTabView.swift */,
+				48DDCA14C8CC29482CD0EDFA /* PortraitGalleryView.swift */,
+				547CAABAD28F0739353E58CB /* SettingsView.swift */,
+				C22929BAE66E90A2D522502F /* StatsView.swift */,
+				279C7D8DA639E4A789FB2439 /* WriteDiaryView.swift */,
+				CD4A4C597E6D0985C65E4F76 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71132563281283C9ADE81763 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E36F79769893B585527BF80 /* SoftDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C6E994607F6C13DBADE59D5 = {
+			isa = PBXGroup;
+			children = (
+				023197A4BA1154F9C57DF49D /* SoftDiary */,
+				71132563281283C9ADE81763 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4A4C597E6D0985C65E4F76 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0FA13650312E9B987F5DAB12 /* CartoonTabBar.swift */,
+				8F4E75351B6ADC33221C6B64 /* CharacterPortraitView.swift */,
+				783729EF339DFCC41A1D6F9E /* DiaryCardView.swift */,
+				0D444A02F95DC72E195E5703 /* DiaryMediaViews.swift */,
+				7BA1923CAB0C79FBE5730113 /* EmptyStateView.swift */,
+				E186ACA23F3FE43AA2A94FB9 /* MoodMascotView.swift */,
+				E8DD2091541D6DB91F617DA6 /* SketchPadView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EEFC12372B999FF21F7CC8BE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1E75D983C391189A98120FBE /* AppSkin.swift */,
+				D2199DAE276EC8E6C5704C51 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		615B4BD1B1B83700ED8BB481 /* SoftDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC484DF091F8D9FBCB8C3F3A /* Build configuration list for PBXNativeTarget "SoftDiary" */;
+			buildPhases = (
+				7308E9E8A45A2FB9BFB94C71 /* Sources */,
+				CD15DB210F4041D5660F3B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftDiary;
+			packageProductDependencies = (
+			);
+			productName = SoftDiary;
+			productReference = 2E36F79769893B585527BF80 /* SoftDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F47ECD30F2D72B13C826654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					615B4BD1B1B83700ED8BB481 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = D02B944E3C1ED4680987E059 /* Build configuration list for PBXProject "SoftDiary" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8C6E994607F6C13DBADE59D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 71132563281283C9ADE81763 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				615B4BD1B1B83700ED8BB481 /* SoftDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD15DB210F4041D5660F3B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F6467B4B0941C57F4EE44F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7308E9E8A45A2FB9BFB94C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440E00E50AE8E702F427CFAA /* AgreementDocumentView.swift in Sources */,
+				BBBB694C90430AD88378E914 /* AppSkin.swift in Sources */,
+				C8F543430F42FE78FDDB25AB /* AppTheme.swift in Sources */,
+				63E910985BE1AD8B3423EFAA /* AudioRecorder.swift in Sources */,
+				0BF6F673830A9D9DAACD5362 /* CalendarDiaryView.swift in Sources */,
+				FCC38A4F2430C24FCE563840 /* CartoonTabBar.swift in Sources */,
+				AE425B351827605CF7EBF532 /* CharacterPortraitView.swift in Sources */,
+				8FC03D127A52252D16DCFAB9 /* CharacterPose.swift in Sources */,
+				685B5665F440281C349A47D5 /* ContentView.swift in Sources */,
+				364BA4C2C47178032B4B973F /* DiaryCardView.swift in Sources */,
+				0A726734C28067A2EC753CB9 /* DiaryDetailView.swift in Sources */,
+				C399F0E3ED178A88773C6DDC /* DiaryEntry.swift in Sources */,
+				3E442769A10981A2B88CE6C1 /* DiaryMediaViews.swift in Sources */,
+				34BA12B6416AA50074A100E2 /* DiaryStore.swift in Sources */,
+				3AC6744AC383D3247ED055A2 /* DiaryTag.swift in Sources */,
+				F12817A18016FC8AEBB9762D /* EmptyStateView.swift in Sources */,
+				FCFC13CDE4AFBE311E775D48 /* ExportService.swift in Sources */,
+				D4A82B143DA635625CE00D10 /* HomeView.swift in Sources */,
+				9EEAC57661091B2166879A4B /* LegalDocuments.swift in Sources */,
+				7751F67F8C4E6BA0BE3A2F71 /* LockScreenView.swift in Sources */,
+				623DF154B6902AE2E47B6D63 /* LockStore.swift in Sources */,
+				567DEDCE3CC3F43ECB948B7E /* MainTabView.swift in Sources */,
+				C2F45256A341513E12254D17 /* MediaStore.swift in Sources */,
+				46899B5F6F5BB0DBCFE74FEA /* Mood.swift in Sources */,
+				17B8B82A8759EEB6D9F15660 /* MoodMascotView.swift in Sources */,
+				BE64D493EDB6FEFA6D308322 /* PortraitGalleryView.swift in Sources */,
+				91FAAEE0B2451A2E2EFD0F62 /* SettingsView.swift in Sources */,
+				3D01E1C244778489B373E35C /* SketchPadView.swift in Sources */,
+				6918F2DBAC5A1E84A98B1CEE /* SoftDiaryApp.swift in Sources */,
+				94712F6EB222AD19807B3968 /* StatsView.swift in Sources */,
+				C0F3E62436520ECFB5AC2A99 /* WriteDiaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E6F8FA5D406B55287D07172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SoftDiary;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SoftDiary uses the camera to take journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "SoftDiary uses Face ID to unlock your journal lock quickly.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SoftDiary uses the microphone to record voice notes. Recordings stay on this device.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SoftDiary may save images to your photo library when you choose to.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SoftDiary uses your photo library to choose journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76CF84ABFAB67A6BBD41686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SoftDiary uses the camera to take journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "SoftDiary uses Face ID to unlock your journal lock quickly.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SoftDiary uses the microphone to record voice notes. Recordings stay on this device.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SoftDiary may save images to your photo library when you choose to.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SoftDiary uses your photo library to choose journal photos. Photos stay on this device.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softdiary.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6795CFCB7A76AF1ECA98DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SoftDiary uses the camera to take journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "SoftDiary uses Face ID to unlock your journal lock quickly.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SoftDiary uses the microphone to record voice notes. Recordings stay on this device.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SoftDiary may save images to your photo library when you choose to.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SoftDiary uses your photo library to choose journal photos. Photos stay on this device.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softdiary.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C163812713DAF332A92D4530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SoftDiary;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SoftDiary uses the camera to take journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "SoftDiary uses Face ID to unlock your journal lock quickly.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SoftDiary uses the microphone to record voice notes. Recordings stay on this device.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SoftDiary may save images to your photo library when you choose to.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SoftDiary uses your photo library to choose journal photos. Photos stay on this device.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D02B944E3C1ED4680987E059 /* Build configuration list for PBXProject "SoftDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6F8FA5D406B55287D07172 /* Debug */,
+				C163812713DAF332A92D4530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC484DF091F8D9FBCB8C3F3A /* Build configuration list for PBXNativeTarget "SoftDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6795CFCB7A76AF1ECA98DB5 /* Debug */,
+				76CF84ABFAB67A6BBD41686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F47ECD30F2D72B13C826654 /* Project object */;
+}
